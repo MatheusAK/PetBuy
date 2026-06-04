@@ -1,0 +1,30 @@
+#ButtonOn {
+    background-color: #3D7A2E;
+    color: #DBE6D8;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+#commonButton {
+    background-color: transparent;
+    color: #2C1A0E;
+    margin: 10px;;
+    padding: 15px;
+    border-radius: 40px;
+    text-decoration: none;
+    border: solid 1px rgb(227, 221, 213);
+}
+
+#ButtonOn:hover {
+    background-color: #5d9e4d;
+    color: #DBE6D8;
+    transition: 0.3s;
+}
+
+#commonButton:hover {
+    background-color: rgb(227, 221, 213);
+    color: #2C1A0E;
+    transition: 0.3s;
+}

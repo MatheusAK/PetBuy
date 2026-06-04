@@ -3,19 +3,30 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(250, 246, 240);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2C1A0E;
 }
 
-header {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    border: solid 1px rgb(227, 221, 213);
+h1 {
+    font-family: DM Serif Display, serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #2C1A0E;
 }
 
-#navButton {
-    background-color: transparent;
-    border: solid 1px black;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 20px;
-} 
+p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #8a7b6f;
+}
+
+.highlight {
+    color: #3D7A2E;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(227, 221, 213);
+    margin: 20px 0;
+}

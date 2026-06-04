@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(227, 221, 213);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navButton {
+    background-color: transparent;
+    color: #2C1A0E;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+} 
+
+#navButtonOn {
+    background-color: #3D7A2E;
+    color: #DBE6D8;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navButton:hover {
+    background-color: rgb(227, 221, 213);
+    color: #2C1A0E;
+    transition: 0.3s;
+}

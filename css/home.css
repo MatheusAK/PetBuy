@@ -1,0 +1,30 @@
+.pageContent {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 8px;
+}
+    
+.apresentação {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.imagemInicio {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+
+.imgHome {
+    margin-top: 20px;
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    transform: rotate(6deg);
+    border-radius: 30px;
+    border: solid 15px rgb(255, 252, 247);
+}
