@@ -7,6 +7,14 @@ body {
     color: #2C1A0E;
 }
 
+#store {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
 h1 {
     font-family: DM Serif Display, serif;
     font-size: 60px;

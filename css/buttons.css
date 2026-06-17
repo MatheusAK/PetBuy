@@ -28,3 +28,20 @@
     color: #2C1A0E;
     transition: 0.3s;
 }
+
+#ButtonSubmit {
+    background-color: #3D7A2E;
+    color: #DBE6D8;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: none;
+}
+
+#ButtonSubmit:hover {
+    background-color: #5d9e4d;
+    color: #DBE6D8;
+    transition: 0.3s;
+}
