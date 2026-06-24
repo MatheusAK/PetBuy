@@ -23,14 +23,14 @@
             <a href="about.html" id="navButton">Sobre Nós</a>
             <a href="pets.html" id="navButton">Comprar um pet</a>
             <a href="contact.html" id="navButton">Contato</a>
-            <a href="register.html" id="navButtonOn">Registrar Pets</a>
+            <a href="register.html" id="navButtonOn">Cadastro</a>
         </nav>
     </header>
 
     <div class="pageContent">
         <div class="apresentação">
             <h1>
-                <span class="highlight">Cadastre</span> <br> o seu pet para adoção!
+                <span class="highlight">Cadastre-se</span> para conhecermos você!
             </h1>
             <p>
                 Use nosso site para encontrar uma nova família para o seu pet! <br> <br> <br>
@@ -45,28 +45,21 @@
         <div class="imagemInicio">
             <h1>Cadastro</h1>
             <form>
-                <label for="tipo">Selecione o tipo de pet:</label>
-                <select id="tipo" name="tipo">
-                    <option value="cachorro">Cachorro</option>
-                    <option value="gato">Gato</option>
-                    <option value="passaro">Pássaro</option>
-                    <option value="peixe">Peixe</option>
-                </select><br><br>
+                <label for="nome">Nome completo:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
 
-                <label for="nome">Nome do Pet:</label><br>
-                <input type="text" id="nome" name="nome"><br><br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="text" id="telefone" name="telefone" required><br><br>
 
-                <label for="idade">Idade do Pet:</label><br>
-                <input type="text" id="idade" name="idade"><br><br>
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" id="endereco" name="endereco" required><br><br>
 
-                <label for="raca">Raça do Pet:</label><br>
-                <input type="text" id="raca" name="raca"><br><br>
-
-                <label for="descricao">Descrição do Pet:</label><br>
-                <textarea id="descricao" name="descricao"></textarea><br><br>
+                <label for="cpf">CPF:</label><br>
+                <input type="text" id="cpf" name="cpf" required><br><br>
 
                 <input type="button" value="Cadastrar" id="ButtonSubmit">
             </form>
+            <h3 id="cadastroSucesso" style="display: none;">Cadastro realizado com sucesso!</h3>
         </div>
     </div>
 </body>

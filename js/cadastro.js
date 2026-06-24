@@ -1,30 +1,30 @@
-const petsList = [];
+const list = [];
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    const petTipo = document.getElementById("tipo");
-    const petNome = document.getElementById("nome");
-    const petIdade = document.getElementById("idade");
-    const petRaca = document.getElementById("raca");
-    const petDescricao = document.getElementById("descricao");
+    const nome = document.getElementById("nome");
+    const telefone = document.getElementById("telefone");
+    const endereco = document.getElementById("endereco");
+    const cpf = document.getElementById("cpf");
+    const botao = document.getElementById("ButtonSubmit");
 
-    function cadastrarPet() {
-        const pet = {
-            tipo: petTipo.value,
-            nome: petNome.value,
-            idade: petIdade.value,
-            raca: petRaca.value,
-            descricao: petDescricao.value
+    function cadastrar() {
+        if (!nome.value || !telefone.value || !endereco.value || !cpf.value) {
+            alert("Por favor, preencha todos os campos.");
+            return;
+        } else {
+        const cadastro = {
+            nome: nome.value,
+            telefone: telefone.value,
+            endereco: endereco.value,
+            cpf: cpf.value
         };
-        petsList.push(pet);
-        console.log(petsList);
+        list.push(cadastro);
+        console.log(list);
+        const mensagemSucesso = document.getElementById("cadastroSucesso");
+        mensagemSucesso.style.display = "block";
+         }
     }
 
-    document.getElementById("ButtonSubmit").addEventListener("click", function (event) {
-        event.preventDefault();
-        cadastrarPet();
-        localStorage.setItem('pets', JSON.stringify(petsList));
-    });
-
+    botao.addEventListener('click', cadastrar);
 });
-
